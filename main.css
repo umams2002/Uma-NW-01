@@ -1,0 +1,94 @@
+/* 
+Purpose: Cascading Style Sheets (CSS) is used to style our web apps.
+
+These files have a file extension of .css. To use this file in the index.html file, 
+we use a link tag in the head section of the index.html file.
+
+Notice the index.html file is divided into a head and body sections.
+- The head section is used to define the title of the web page and link to css files and icons.
+- The body section is used to define the content of the web page and link to JavaScript files.
+*/
+
+
+
+/* Apply these styles to all html elements in the body section. */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAFAFA;
+  }
+  
+  
+  /* Apply these styles to the html elements in the header section. */
+  
+  header {
+    padding: 10px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    font-size: 2em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    /* Add a little shadow to the header */
+  }
+  
+  
+  /* A leading dot (.) indicates a class selector.  */
+  
+  /* Apply these styles to the html elements with a 'class' attribute = 'container'. */
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Apply these styles to the html elements with a 'class' attribute = 'sidebar'. */
+  
+  /* TODO: Change the sidebar color  */
+  .sidebar {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease;
+    /* Gradual change when the color changes */
+  }
+  
+  .sidebar:hover {
+    background-color: #E0E0E0;
+    /* Slightly darker gray when hovering over the sidebar */
+  }
+  
+  
+  
+  /* Apply these styles to index.html elements with a 'class' attribute = 'main'. */
+  
+  .main {
+    flex: 3;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+    /* Gradual change when the color changes */
+  }
+  
+  
+  /* On hovering over the class = 'main' elements, switch to slightly darker gray */
+  
+  .main:hover {
+    background-color: #F5F5F5;
+  }
+  
+  /* Apply these styles to all html input elements of type 'text'. */
+  
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  /* When we click on an input element, it gets the 'focus' - change the border color */
+  
+  input[type=text]:focus {
+    border: 2px solid #007BFF;
+  }
