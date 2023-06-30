@@ -1,7 +1,7 @@
 
 document.getElementById("nameInput").addEventListener("input", () => { 
    let user = document.getElementById("nameInput").value;
-   let welcome_string = `Greetings ${user}!`;
+   let welcome_string = `Greetings ${user}!.Time is ${Date()}`;
    document.getElementById("welcomeOutput").innerText = welcome_string;
 });
 
